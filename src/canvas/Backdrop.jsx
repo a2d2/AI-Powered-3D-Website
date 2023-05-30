@@ -28,7 +28,7 @@ const Backdrop = () => {
         radius={5}
         intensity={0.25}
         ambient={0.55}
-        position={[5, 5, -109]}
+        position={[5, 5, -9]}
       />
     </AccumulativeShadows>
   );

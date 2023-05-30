@@ -11,7 +11,7 @@ const CameraRig = ({ children }) => {
     const isBreakpoint = window.innerWidth <= 1260;
     const isMobile = window.innerWidth <= 600;
 
-    //set the initial position of the model
+    //set the initial position of the model in all devices
     let targetPosition = [-0.4, 0, 2];
     if (snap.intro) {
       if (isBreakpoint) targetPosition = [0, 0, 2];
@@ -28,8 +28,7 @@ const CameraRig = ({ children }) => {
     easing.dampE(
       group.current.rotation,
       [state.pointer.y / 10, -state.pointer.x / 5, 0],
-      0,
-      25,
+      0.25,
       delta
     );
   });

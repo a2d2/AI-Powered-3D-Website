@@ -55,7 +55,7 @@ const Customizer = () => {
               <Tab
                 key={tab.name}
                 tab={tab}
-                isFiltertab
+                isFilterTab
                 isActiveTab=" "
                 handleClick={() => {}}
               />
